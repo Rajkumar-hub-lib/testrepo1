@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+    <title>Interest Calculatot</title>
+    <script type="application/javascript">
+        function checkdata(){
+          //create references to the input elements we wish to validate
+          var userAmount = document.getElementById("Amount");
+          var Amountid   = document.getElementById("Amount");
+
+          //Check if userAmount field is empty
+          if(userAmount.value == ""){
+                alert("Please enter the Amount");
+                userAmount.focus();
+                return false;
+          }
+         //Check if Amount field is empty
+          if(Amountid.value == ""){
+                alert("Please enter the Amount");
+                Amountid.focus();
+                return false;
+          }
+         //If all is well return true.
+         alert("Form validation is successful.")
+          return true;
+        }
+    </script>
+    </head>
+    <body {background-color:black;font-family:arial;color:white}
+        <h2 style="font-family: Cursive; font-size:70px; color:rgb(139,0,0)">Simple Interest Calculator </h2> <br>
+        <form id="form1" onsubmit="return checkdata()">
+            <label for="Amount">Amount :</label>
+			<input var principal = document.getElementById("principal").value;>
+            <br>
+            <br>
+            <label for="A number with decimals">Interst Rate :</label>
+            <input  var rate = document.getElementById("rate").value;>
+			<span id="rate_val">
+10.25%
+</span>
+            <br>
+            <br>
+            <label for="Number">No of Years :</label>
+            <var year = new Date().getFullYear()+parseInt(years);>
+    <option value="1">1</option>
+    <!-- fill in the rest of the values-->
+</select><br>
+			<label for="A number with decimals">Interest :</label>
+			<input    var interest = principal * years * rate /100;>
+            <br>
+			<br>
+            <input type="Compute Interest" value="Compute Interest">
+			<span id="result">
+
+</span>
+            <input type="reset" value="Reset">
+        </form>
+</html>
